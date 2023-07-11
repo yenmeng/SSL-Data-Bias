@@ -1,6 +1,6 @@
 # SSL-Data-Bias
 
-This repository contains related code and information for the following paper: <br>
+This repository contains related code and information for the paper: <br>
 ["Don't speak too fast: The impact of data bias on self-supervised speech models"](https://arxiv.org/abs/2110.07957). *ICASSP 2022*
 
 ## Usage
@@ -12,7 +12,7 @@ All the pre-training datasets in the paper are fixed to 100 hours (selected subs
 ### 1. Gender
 Code for generating gender-biased datasets with different male-to-female ratios
 
-### Command
+#### Command
 require a metadata .txt file of all audio files in the pool (same format as libri_metadata_100_360.txt)
 ```
 python random_gender.py [-i INPUT_DATA] -n OUTPUT_NAME [-a AUDIO_EXTENSION] -f FEMALE_RATIO -m MALE_RATIO
