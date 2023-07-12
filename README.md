@@ -42,8 +42,7 @@ metadata for
 * selected *highest 100 hours words per minute (wpm) dataset*
 * selected *lowest 100 hours words per minute (wpm) dataset*
 
-## References
-If you use anything from this repository, please consider citing our paper:
+## Citation
 
 ```
 @inproceedings{meng2022don,
