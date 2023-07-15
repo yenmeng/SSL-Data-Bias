@@ -40,6 +40,7 @@ def get_data(args, male, female):
     duration_m = 0.0
     f_ratio = args.female_ratio
     m_ratio = args.male_ratio
+    assert f_ratio + m_ratio == 1.0, "the sum should equal to 1"
     data = []
     print('collecting female data...')
     #split,filename,duration,gender
@@ -60,6 +61,7 @@ def get_data(args, male, female):
 
 def make_folder(output_path, output_name, data):
     # save to txt for reference
+    os.makedirs('./data_txt', exist_ok=True)
     with open(os.path.join('data_txt', output_name+'.txt'), "w") as outfile:
         outfile.write("\n".join(data))
 
